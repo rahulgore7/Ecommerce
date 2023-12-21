@@ -58,5 +58,8 @@
       "last 1 safari version"
     ]
   },
+  "engines": {
+    "node": "16.x"
+  },
   "proxy": "https://ecommerce-server-gamma.vercel.app:4000"
 }
