@@ -1,73 +1,56 @@
-footer {
-  margin-top: 10vmax;
-  padding: 2vmax;
-  background-color: rgb(34, 33, 33);
-  color: white;
-  display: flex;
-  align-items: center;
-}
-
-.leftFooter {
-  width: 20%;
-  display: flex;
-
-  flex-direction: column;
-  align-items: center;
-}
-.leftFooter > h4 {
-  font-family: "Roboto";
-  font-size: 1vmax;
-}
-.leftFooter > p {
-  text-align: center;
-  font-size: 1.2vmax;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.leftFooter > img {
-  width: 10vmax;
-  margin: 1vmax;
-  cursor: pointer;
-}
-
-.midFooter {
-  width: 60%;
-
+.footer {
+  background: #000;
+  padding: 30px 0px;
+  font-family: 'Play', sans-serif;
   text-align: center;
 }
 
-.midFooter > h1 {
-  font-size: 4vmax;
-  font-family: "Roboto";
-  color: #eb4034;
-}
-.midFooter > p {
-  max-width: 60%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 1vmax auto;
-}
-
-.rightFooter {
-  width: 20%;
-
+.footer .row {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
 }
-.rightFooter > h4 {
-  font-family: "Roboto";
-  font-size: 1.4vmax;
-  text-decoration: underline;
-}
-.rightFooter > a {
+
+.footer .row a {
+  margin: 0 20px 0px 20px;
   text-decoration: none;
-  font-size: 1.3vmax;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: white;
-  transition: all 0.5s;
-  margin: 0.5vmax;
+  color: gray;
+  transition: 0.5s;
+}
+ .rahulg{
+  height: 30px;
+  width: 30px;
+ }
+
+.footer .row a:hover {
+  color: #fff;
 }
 
-.rightFooter > a:hover {
-  color: #eb4034;
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+
+@media (max-width:720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+
 }

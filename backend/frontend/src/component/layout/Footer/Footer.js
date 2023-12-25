@@ -1,30 +1,30 @@
 import React from "react";
-import playStore from "../../../images/playstore.png";
-import appStore from "../../../images/Appstore.png";
+import { FaTwitter, FaInstagram, FaGithubAlt } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer id="footer">
-      <div className="leftFooter">
-        <h4>DOWNLOAD OUR APP</h4>
-        <p>Download App for Android and IOS mobile phone</p>
-        <img src={playStore} alt="playstore" />
-        <img src={appStore} alt="Appstore" />
-      </div>
+    <footer>
+      <div className="footer">
+        <div className="row">
+          <a href="https://www.instagram.com/rahulgore7/"><FaInstagram className="rahulg" /></a>
+          <a href="https://www.twitter.com/RahulGore54/"><FaTwitter className="rahulg"/></a>
+          <a href="https://www.github.com/rahulgore7/"><FaGithubAlt className="rahulg"/></a>
+        </div>
 
-      <div className="midFooter">
-        <h1>ECOMMERCE.</h1>
-        <p>High Quality is our first priority</p>
+        <div className="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
 
-        <p>Copyrights 2021 &copy; MeAbhiSingh</p>
-      </div>
-
-      <div className="rightFooter">
-        <h4>Follow Us</h4>
-        <a href="http://instagram.com/meabhisingh">Instagram</a>
-        <a href="http://youtube.com/6packprogramemr">Youtube</a>
-        <a href="http://instagram.com/meabhisingh">Facebook</a>
+        <div className="row">
+           Copyright © 2023 Rahul - All rights reserved || Designed By: Rahul Gore
+        </div>
       </div>
     </footer>
   );
